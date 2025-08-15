@@ -1,3 +1,22 @@
+// Less lines of code
+class Solution {
+public:
+    bool isPowerOfFour(int n) 
+    {
+        if(n<=0)return 0;
+        int cnt=0;
+        while(n%2==0)
+        {
+            cnt++;
+            n/=2;
+        }
+        cout<<cnt<<endl;
+        return (n==1 && cnt%2==0);
+        
+    }
+};
+
+// More lines of code
 class Solution {
 public:
 
